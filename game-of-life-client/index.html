@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Game of life</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="header">Game of life</h1>
+    <main id="main">
+        <canvas id="board" width="1822px" height="634px"></canvas>
+    </main>
+    <footer>
+        <div class="buttons">
+            <button id="start" class="start"> <i class="fas fa-play"></i>Start</button>
+            <button id="next-step"><i class="fas fa-chevron-circle-right"></i>Next</button>
+            <button id="clear"><i class="fas fa-chevron-circle-left"></i>Clear</button>
+        </div>
+        <div class="range-inputs">
+            <i class="fas fa-tachometer-alt"></i>
+            <input id="speed" type="range" min="0" max="100" step="10" value="50">
+            <i class="fas fa-chess-board"></i>
+            <input id="size"  type="range" min="0" max="100" step="10" value="70">
+            <div id="amountNextStep">0</div>
+        </div>
+        <script src="./js/grid-size.js" type= "module" ></script>
+        <script src="./js/board.js" type= "module" ></script>
+        <script src="./js/listeners.js" type= "module" ></script>
+    </footer>
+
+<!doctype html>
+<html lang="en">
+
+</body>
+</html>
